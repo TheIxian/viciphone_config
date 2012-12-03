@@ -715,7 +715,7 @@
 <!--  Dial Plan -->
 <!--  String -->
 <!--  Mandatory -->
-<P290>{ x+ | *x+ | *xx*x+ }</P290>
+<P290>{ ^1900x. | <1=61>[2-9]xx[2-9]xxxxxx | <=61>[2-9]xx[2-9]xxxxxx | x+ | *x+ | *xx*x+ }</P290>
 
 <!--  BLF Call-pickup Prefix. By default ** is used. -->
 <!--  String -->
@@ -1196,7 +1196,7 @@
 <!--  Dial Plan -->
 <!--  String -->
 <!--  Mandatory -->
-<P459>{ x+ | *x+ | *xx*x+ }</P459>
+<P459>{ ^1900x. | <1=61>[2-9]xx[2-9]xxxxxx | <=61>[2-9]xx[2-9]xxxxxx | x+ | *x+ | *xx*x+ }</P459>
 
 <!--  BLF Call-pickup Prefix: -->
 <!--  String -->
