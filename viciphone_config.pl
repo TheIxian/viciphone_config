@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 #
 # viciphone_config.pl is used to retrieve phone configuration variables
 # from the vicidial "phones" table in order to configure grandstream phones
@@ -26,7 +26,7 @@ my $script_name = 'viciphone_config.pl';
 my $timezone = 'America/Chicago';
 
 # database connection variables
-my $vici_db_host = '192.168.1.201';
+my $vici_db_host = '127.0.0.1';
 my $vici_db_port = '3306';
 my $vici_db_name = 'asterisk';
 my $vici_db_user = 'cron';
@@ -186,7 +186,7 @@ if ($uri_mac_addr eq $ua_mac_addr) {
 									dtmf_send_extension
 							 FROM phones
 							 WHERE on_hook_agent = \'Y\'
-							 AND phone_type LIKE \'\%$ua_mac_addr\%\'");
+							 AND phone_type LIKE \'\%$uri_mac_addr\%\'");
 	$sth->execute();
 
 	$sth->bind_col(1,\$extension);
