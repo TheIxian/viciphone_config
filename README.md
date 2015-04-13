@@ -1,7 +1,7 @@
 # viciphone_config
 A Perl-based web script to configure Grandstream phones via VICIdial
 
-# Created by Loren Burlingame @ Tonka TelTec (loren@tonkateltec.com)
+# Created by Loren Burlingame @ Tonka TelTec (loren at tonkateltec dot com)
 #
 # 10/20/2012
 #
