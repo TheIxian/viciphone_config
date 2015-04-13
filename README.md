@@ -38,8 +38,8 @@ done to your system by or as a result from using this script.
 
 Note the Perl packages you will need installed in order to run this script
 
-CGI.pm
-CGI::Carp
-DateTime
-DateTime::TimeZone
-DBI
+- CGI.pm
+- CGI::Carp
+- DateTime
+- DateTime::TimeZone
+- DBI
